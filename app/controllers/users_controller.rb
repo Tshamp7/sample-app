@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   # new displays the page for signing up a new user. Found in new.html.erb.
   def new
     @user = User.new
+    render :new
   end
 
   def show
